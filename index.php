@@ -3,6 +3,14 @@
 	<title>Cypher</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="js/cypher.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#output").djave_cypher({
+			'cypher_text'	: "Holy moly it works!"
+		});
+	});
+
+	</script>
 	<style type="text/css">
 		*{font-family: 	"Trebuchet MS", sans-serif;}
 		html, body{background:#222; color:#979C9E;}
@@ -14,6 +22,6 @@
 	</style>
 </head>
 <body>
-<div id="output"></div>
+<div id="output">Text</div>
 </body>
 </html>
