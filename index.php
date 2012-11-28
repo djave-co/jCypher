@@ -6,7 +6,7 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$("#output").djave_cypher({
-			'cypher_text'	: "Holy moly it works!"
+			'cypher_text'	: "Holy moly it works"
 		});
 	});
 
