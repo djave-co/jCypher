@@ -1,7 +1,16 @@
+/*
+ *
+ *	jQuery Cypher
+ *		https://github.com/sheepysheep60/count-up
+ *	
+ *	David Williams
+ *		djave.co.uk
+ *
+*/
+
 (function( $ ) {
-	$.fn.djave_cypher = function(options) {
-  
-		
+	$.fn.djave_cypher = function(options, callback) {
+   
 		var settings = $.extend( {
 			'cypher_text'	: this.text(),
 			'start'			: 10,
@@ -23,7 +32,7 @@
 			initial = settings.start + settings.offset*i;
 			letters_array[i]=[bits[i], initial];
 		}
-		
+
 		tick();
 
 		function tick(){
@@ -40,7 +49,11 @@
 			if(number_finished == len)
 			{ 
 				if(settings.console_log==true){console.log("finished!")};
+   
 				clearTimeout(timer);
+    if (typeof callback == 'function') {
+        callback.call(this); 
+    }
 			}
 			else
 			{
@@ -67,9 +80,9 @@
 				{
 					output_string.push(all[i][0]);
 				}
-				
+
 			}
-			settings.target.html("<p>" + output_string.join("") + "</p>");
+			settings.target.text(output_string.join(""));
 		}
 
 	};
