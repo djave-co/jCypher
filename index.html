@@ -32,6 +32,11 @@
 
 <p>A lightweight text cyphering jQuery plugin.</p>
 
+<h2>Demo</h2>
+
+<p id="target">Text to cypher</p>
+<p style="display:none;" id="restart-wrap">  <a href="#" id="restart">Restart</a> </p>
+
 <h2>Usage</h2>
 
 <p>Basic usage:</p>
@@ -62,7 +67,17 @@
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascripts/functions.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#target").djave_cypher({'frequency' : 60},function(){$("#restart-wrap").slideDown("slow");});
+      $("#restart").click(function(){
+        $("#restart-wrap").hide();
+        $("#target").djave_cypher();
+      });
+    });
+    </script>
     
   </body>
 </html>
