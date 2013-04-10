@@ -9,7 +9,7 @@ Usage
 Basic usage:
 
     $(document).ready(function(){
-        $("#target").djave_cypher();
+        $("#target").jCypher();
     });
 
 Options:
@@ -25,4 +25,6 @@ Options:
     // which div to act on
     'target'		: this,
     // If set to true, will output to console on complete
-    'console_log'		: false
+    'console_log'       : false,
+    // What to do when it finishes
+    'callback'       : null

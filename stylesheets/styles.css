@@ -40,6 +40,11 @@ h3, h4, h5, h6 {
   color:#494949;
 }
 
+figure{
+  text-align: center;
+  padding:0 0 10px 0;
+}
+
 a {
   color:#39c;
   font-weight:400;
@@ -222,7 +227,7 @@ footer {
   header ul {
     position:absolute;
     right:50px;
-    top:52px;
+    top:18px;
   }
 }
 

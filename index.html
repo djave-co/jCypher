@@ -14,18 +14,19 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <figure>
         <img src="imgs/jcypher-logo.png" alt="jCypher Logo" />
+      </figure>
+      <header>
+        
         <h1>Cypher</h1>
-        <p>jQuery Cypher</p>
-
-        <p class="view"><a href="https://github.com/djave-co/Cypher">View the Project on GitHub <small>djave-co/Cypher</small></a></p>
+        <p class="view"><a href="https://github.com/djave-co/jCypher">View the Project on GitHub <small>djave-co/jCypher</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/djave-co/Cypher/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/djave-co/Cypher/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/djave-co/Cypher">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/djave-co/jCypher/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/djave-co/jCypher/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/djave-co/jCypher">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
@@ -43,7 +44,7 @@
 <p>Basic usage:</p>
 
 <pre><code>$(document).ready(function(){
-    $("#target").djave_cypher();
+    $("#target").jCypher();
 });
 </code></pre>
 
@@ -64,18 +65,17 @@
 </code></pre>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/djave-co">djave-co</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>This project is maintained by djave. <a href="http://twitter.com/djave_co">Twitter</a> | <a href="http://djave.co.uk/">Web</a> | <a href="https://github.com/djave-co">Github</a></p>
       </footer>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="javascripts/functions.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-      $("#target").djave_cypher({'frequency' : 60},function(){$("#restart-wrap").slideDown("slow");});
+      $("#target").jCypher({'frequency' : 60},function(){$("#restart-wrap").slideDown("slow");});
       $("#restart").click(function(){
         $("#restart-wrap").hide();
-        $("#target").djave_cypher();
+        $("#target").jCypher();
       });
     });
     </script>

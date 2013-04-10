@@ -1,7 +1,7 @@
-/*
+/*!
  *
  *	jQuery Cypher
- *		https://github.com/sheepysheep60/count-up
+ *		https://github.com/djave-co/jCypher
  *	
  *	David Williams
  *		djave.co.uk
@@ -9,7 +9,7 @@
 */
 
 (function( $ ) {
-	$.fn.djave_cypher = function(options, callback) {
+	$.fn.jCypher = function(options, callback) {
    
 		var settings = $.extend( {
 			'cypher_text'	: this.text(),
@@ -22,7 +22,6 @@
 		}, options);
 
 		var initial; 
-
 		var letters_array = new Array();
 
 		bits = settings.cypher_text.split("");
