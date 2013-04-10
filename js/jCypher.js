@@ -9,7 +9,7 @@
 */
 
 (function( $ ) {
-	$.fn.jcypher = function(options, callback) {
+	$.fn.jCypher = function(options, callback) {
    
 		var settings = $.extend( {
 			'cypher_text'	: this.text(),
