@@ -1,7 +1,7 @@
 jCypher
 ======
 
-A lightweight text cyphering jQuery plugin.
+A lightweight text cyphering jQuery plugin. Page at [http://djave-co.github.io/jCypher/](http://djave-co.github.io/jCypher/ "http://djave-co.github.io/jCypher/")
 
 Usage
 -----
