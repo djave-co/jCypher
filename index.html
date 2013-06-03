@@ -74,10 +74,12 @@
     <script type="text/javascript">
     $(document).ready(function(){
       $("#target").jCypher({'frequency' : 60},function(){$("#restart-wrap").slideDown("slow");});
+      
       $("#restart").click(function(){
         $("#restart-wrap").hide();
-        $("#target").jCypher();
+        $("#target").jCypher({'frequency' : 60},function(){$("#restart-wrap").slideDown("slow");});
       });
+      
     });
     </script>
     
